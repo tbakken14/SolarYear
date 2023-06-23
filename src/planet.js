@@ -4,6 +4,6 @@ export class Planet {
      * @param {number} solarYear local years per earth year
      */
     constructor(solarYear) {
-        this.solarYear = parseFloat(solarYear);
+        this.solarYear = Math.abs(parseFloat(solarYear));
     }
 }

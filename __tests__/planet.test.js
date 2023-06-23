@@ -12,4 +12,9 @@ describe('Planet', () => {
         expect(planet.solarYear).toEqual(NaN);
     });
 
+    test('Constructor enforces solarYear as positive ratio', () => {
+        const planet = new Planet(-1);
+        expect(planet.solarYear).toEqual(1);
+    })
+
 })
