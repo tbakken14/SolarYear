@@ -4,7 +4,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
-    devtool: false,
     entry: './src/index.js',
     output: {
         filename: 'bundle.js',
