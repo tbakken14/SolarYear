@@ -1,4 +1,9 @@
 export class Planet {
+    static Mercury = new Planet(.24);
+    static Venus = new Planet(.62);
+    static Mars = new Planet(1.88);
+    static Jupiter = new Planet(11.86);
+
     /**
      * Planet constructor
      * @param {number} solarYear Units: local years per earth year
