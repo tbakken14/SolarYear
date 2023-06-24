@@ -4,6 +4,6 @@ export class Age {
      * @param {number} years Units: earth years
      */
     constructor(years) {
-        this.years = years;
+        this.years = parseFloat(years);
     }
 }
