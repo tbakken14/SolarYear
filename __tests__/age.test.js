@@ -1,6 +1,7 @@
 import { Age } from './../src/age.js';
+import { Planet } from './../src/planet.js';
 
-describe('Age()', () => {
+describe('constructor()', () => {
     test('Constructs age with property years set to first argument', () => {
         const age = new Age(1);
         expect(age.years).toEqual(1);
@@ -15,4 +16,14 @@ describe('Age()', () => {
         const age = new Age(-1);
         expect(age.years).toEqual(1);
     });
+});
+
+describe('convertAgeToPlanetYears()', () => {
+    const testCases = [[1, Planet.Mercury, .24], [1, Planet.Jupiter, 11.86]];
+
+    test.each(testCases)('Converts %i earth years, with local year ratio %i, to local years %i',
+        (years, planet, result) => {
+            const age = new Age(years);
+            expect(age.convertAgeToPlanetYears(planet)).toBeCloseTo(result);
+        });
 });
