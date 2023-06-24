@@ -1,7 +1,6 @@
 import { Planet } from './../src/planet.js';
 
 describe('Planet()', () => {
-
     test('Constructs planet with property solarYear set to first argument', () => {
         const planet = new Planet(1);
         expect(planet.solarYear).toEqual(1);
