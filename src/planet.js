@@ -1,8 +1,8 @@
 export class Planet {
-    static Mercury = new Planet(.24);
-    static Venus = new Planet(.62);
-    static Mars = new Planet(1.88);
-    static Jupiter = new Planet(11.86);
+    static Mercury = new Planet(1 / .24);
+    static Venus = new Planet(1 / .62);
+    static Mars = new Planet(1 / 1.88);
+    static Jupiter = new Planet(1 / 11.86);
 
     /**
      * Planet constructor

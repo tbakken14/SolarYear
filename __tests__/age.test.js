@@ -19,7 +19,7 @@ describe('constructor()', () => {
 });
 
 describe('convertAgeToPlanetYears()', () => {
-    const testCases = [[1, Planet.Mercury, .24], [1, Planet.Jupiter, 11.86]];
+    const testCases = [[1, Planet.Mercury, 1 / .24], [1, Planet.Jupiter, 1 / 11.86]];
 
     test.each(testCases)('Converts Earth years, to planet years',
         (years, planet, result) => {
@@ -29,7 +29,7 @@ describe('convertAgeToPlanetYears()', () => {
 });
 
 describe('planetYearsSinceAge()', () => {
-    const testCases = [[2, new Age(1), Planet.Mercury, .24], [2, new Age(1), Planet.Jupiter, 11.86]];
+    const testCases = [[2, new Age(1), Planet.Mercury, 1 / .24], [2, new Age(1), Planet.Jupiter, 1 / 11.86]];
 
     test.each(testCases)('Age difference converted to planet years',
         (years, prevAge, planet, result) => {
