@@ -15,4 +15,9 @@ export class Age {
     convertAgeToPlanetYears(planet) {
         return planet.convertEarthYears(this.years);
     }
+
+    ageDifferenceToPlanetYears(age, planet) {
+        const years = this.years - age.years;
+        return planet.convertEarthYears(years);
+    }
 }

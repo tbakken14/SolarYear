@@ -21,9 +21,19 @@ describe('constructor()', () => {
 describe('convertAgeToPlanetYears()', () => {
     const testCases = [[1, Planet.Mercury, .24], [1, Planet.Jupiter, 11.86]];
 
-    test.each(testCases)('Converts %i earth years, with local year ratio %i, to local years %i',
+    test.each(testCases)('Converts Earth years, to planet years',
         (years, planet, result) => {
             const age = new Age(years);
             expect(age.convertAgeToPlanetYears(planet)).toBeCloseTo(result);
+        });
+});
+
+describe('planetYearsSinceAge()', () => {
+    const testCases = [[2, new Age(1), Planet.Mercury, .24], [2, new Age(1), Planet.Jupiter, 11.86]];
+
+    test.each(testCases)('Age difference converted to planet years',
+        (years, prevAge, planet, result) => {
+            const age = new Age(years);
+            expect(age.ageDifferenceToPlanetYears(prevAge, planet)).toBeCloseTo(result);
         });
 });
