@@ -10,6 +10,8 @@
 * _Javascript_
 * _HTML_
 * _CSS_
+* _Jest_
+* _Webpack_
 
 ## Description
 
