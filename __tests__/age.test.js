@@ -37,3 +37,13 @@ describe('planetYearsSinceAge()', () => {
             expect(age.ageDifferenceToPlanetYears(prevAge, planet)).toBeCloseTo(result);
         });
 });
+
+describe('convertAgeToDogYears()', () => {
+    const testCases = [[1, 7], [2, 14], [5.5, 38.5]];
+
+    test.each(testCases)('Age converted to dog years',
+        (years, result) => {
+            const age = new Age(years);
+            expect(age.convertAgeToDogYears()).toBeCloseTo(result);
+        });
+});
