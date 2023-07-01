@@ -13,13 +13,20 @@
 
 ## Description
 
-_This app provides the user the ability to create a pizza order. Both specialty and custom pizzas can be added to the order. A list of pizzas in the order is provided as well as line and total costs._
+_This app converts solar years from earth to other planets. It also converts years since an age, or, until and age to years on another planet. This project is focused on utilizing test driven development (TDD). Additionally, a dog year converter has been added to the age object to demonstrate red-green-refactor TDD workflow._
 
 ## Setup/Installation Requirements
 
 * _Install compatible version of node.js_
-* _Install dependencies with bash command "npm install"_
-* _Build and start the application with bash command "npm run start"_
+* _In bash command line_
+  * _Navigate to root project directory_
+  * _Setup commands:_
+    * _npm init_
+    * _npm install_
+  * _View webpage_
+    * _npm run start_
+  * _Execute tests_
+    * _npm run test_
 
 _This project was built using node version v18.16.0 and npm version 9.5.1_
 
