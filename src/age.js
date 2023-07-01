@@ -22,7 +22,6 @@ export class Age {
     }
 
     convertAgeToDogYears() {
-        const result = this.years * 7;
-        return result;
+        return this.years * 7;
     }
 }
