@@ -20,4 +20,9 @@ export class Age {
         const years = this.years - age.years;
         return planet.convertEarthYears(years);
     }
+
+    convertAgeToDogYears() {
+        const result = this.years * 7;
+        return result;
+    }
 }
